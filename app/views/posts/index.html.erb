@@ -1,0 +1,11 @@
+<img src="kharkiv.jpg" >
+<% @posts.each do |post| %>
+    <br/>
+    <h1>
+      <%= link_to post.title, post_path(post) %>
+    </h1>
+    <p>
+      <%= post.description %>
+    </p>
+    <hr/>
+<% end %>
